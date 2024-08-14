@@ -4,14 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Carro de Compras</title>
+    <link rel="stylesheet" href="estilos.css">
     <style>
     /* Estilos generales */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f1f1f1;
-    margin: 0;
-    padding: 0;
-}
 
 /* Contenedor del carrito */
 .container {
@@ -54,7 +49,7 @@ h2 {
 
 /* Botón en la promo box */
 .promo-box button {
-    background-color: #4caf50;
+    
     border: none;
     color: white;
     padding: 10px 20px;
@@ -171,7 +166,7 @@ input[type="text"] {
     }
 
     .promo-box button {
-        font-size: 14px; /* Ajustar tamaño de fuente para el botón en pantallas pequeñas */
+        font-size: 1px; /* Ajustar tamaño de fuente para el botón en pantallas pequeñas */
         padding: 8px;
     }
 
@@ -192,8 +187,8 @@ input[type="text"] {
             <span>MUEBLERIA CRISTIANS.</span>
         </div>
         <div class="promo-box">
-            <span>¡Agrega ahora la «Instalación mueble 02» a tu compra!</span>
-            <button>Agregar Instalación mueble 02</button>
+            <span>¡Agrega ahora la «Instalación de tu mueble» a tu compra!</span>
+            
         </div>
         <table>
             <thead>
@@ -217,11 +212,13 @@ input[type="text"] {
         </table>
         <div style="display: flex; justify-content: space-between;">
             <div>
-                <input type="text" placeholder="Código" style="padding: 10px; width: 150px;">
-                <button class="btn">Aplicar cupón</button>
+                <input type="text" placeholder="" style="padding: 10px; width: 150px;">
+               
+                <button id="btn-aplicar-cupon" class="btn" onclick="window.location.href='index.html'">Volver para seguir comprando</button>
+
             </div>
             <div>
-                <button class="btn">Actualizar carrito</button>
+                <button  id="btn-aplicar-cupon2" class="btn">Actualizar carrito</button>
             </div>
         </div>
     </div>

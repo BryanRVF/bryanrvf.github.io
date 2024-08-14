@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decoración de Cocinas</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            
+   
+    
+}
+   
+
+        /* Estilos para la barra superior */
+        .top-bar {
+            color: white;
+            font-size: 0.9rem;
+            position: absolute;
+            width: 100%;
+            z-index: 2;
+            top: 0;
+            font-size: 12px; /* Tamaño más pequeño del texto */
+         
+            
+        }
+        .top-bar::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -10px; /* Ajusta la posición vertical de la línea */
+    left: 10%; /* Ajusta la distancia desde el borde izquierdo */
+    right: 10%; /* Ajusta la distancia desde el borde derecho */
+    height: 2px; /* Grosor de la línea */
+    background-color: white; /* Color de la línea */
+}
+        .top-bar .contact-info {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 5px 15px;
+            
+            
+        }
+
+        .top-bar .contact-info a {
+            color: white;
+            text-decoration: none;
+            margin-left: 10px;
+            
+            
+        }
+
+        .top-bar .contact-info i {
+            color: #d4af37;
+            margin-right: 5px;
+            
+            
+        }
+        .top-bar .contact-info a .fab {
+    color: white; /* Esto hará que los íconos de Facebook e Instagram estén en blanco */
+    font-size: 15px;
+
+    
+}
+
+        /* Estilos para el menú de navegación */
+        .navbar-custom {
+            background-color: transparent;
+            border-bottom: 0;
+            position: absolute;
+            width: 100%;
+      
+            z-index: 2;
+            
+            top: -2px; 
+            font-size: 0.8rem; /* Ajusta este valor para cambiar el tamaño de la fuente global */
+          
+        }
+ 
+  
+
+        .navbar-custom .navbar-brand img {
+            height: 50px;
+
+        }
+
+        .navbar-custom .navbar-nav .nav-link {
+     
+            color: white;
+            font-weight: bold;
+            text-transform: uppercase;
+            margin: 0 15px;
+            right: 10%; 
+           
+        }
+
+        .navbar-custom .navbar-nav .nav-link:hover {
+            color: #d4af37;
+        }
+
+    
+        .navbar-custom .btn-contact {
+            background-color: #d4af37;
+            color: white;
+            
+            padding: 8px 20px;
+            border-radius: 5px; /* Rectangular */
+            text-transform: uppercase;
+            font-weight: bold;
+            font-size: 0.8rem;
+            
+        }
+
+
+        .navbar-custom .btn-contact:hover {
+           
+           
+    background-color: #30b37c; /* Color de fondo cuando se pasa el mouse */
+
+        }
+
+        /* Estilos para el encabezado */
+        .header-content {
+            background-image: url('imagenes/closet11.png'); /* Reemplaza con la URL de la imagen de fondo */
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            
+            color: white;
+            position: relative;
+        }
+
+        .header-content::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.5); /* Oscurece la imagen de fondo */
+        }
+
+        .header-content h1 {
+            font-size: 3rem;
+            font-weight: bold;
+            z-index: 1;
+        }
+
+        .header-content p {
+            font-size: 1.5rem;
+            margin-top: 20px;
+            z-index: 1;
+        }
+
+        .header-content .btn-custom {
+            background-color: #d45637;
+            color: white;
+            padding: 10px 30px;
+            font-size: 1.2rem;
+            margin-top: 30px;
+            border-radius: 20px;
+            border: none;
+            z-index: 1;
+        }
+
+        .header-content .btn-custom:hover {
+            background-color: #30b39d;
+        }
+        .icon-whatsapp {
+    font-size: 1rem; /* Ajusta este valor según el tamaño deseado */
+    margin-right: 5px; /* Ajusta el espacio entre el ícono y el texto si es necesario */
+}
+    </style>
+</head>
+
+<body>
+
+    <!-- Barra Superior -->
+   <!-- Barra Superior -->
+<div class="top-bar">
+    <div class="container">
+        <div class="contact-info">
+            <div>
+                <span><i class="fas fa-phone"></i> 981 324 207</span>
+                <a href="mailto:maycoltorres@marmolygranitoariana.com"><i class="fas fa-envelope"></i><strong> mueblescristian@muebleriaperu.com</strong></a>
+            </div>
+            <div>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- Menú de Navegación -->
+<nav class="navbar navbar-expand-lg navbar-custom" style="margin-top: 40px;">
+    <div class="container">
+     
+        <a class="navbar-brand" href="#">
+            <img src="estilos/logo1.png" alt="Logo"> <!-- Reemplaza con el logo correspondiente -->
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#inicio">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#nosotros">Nosotros</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#servicios">Servicios</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#proyectos">Proyectos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contactanos">Contáctanos</a>
+                </li>
+            </ul>
+            <a href="#contactanos" class="btn btn-contact btn-contact-small">
+                <i class="fab fa-whatsapp icon-whatsapp"></i> Contáctanos
+            </a>
+    </div>
+</nav>
+
+
+    <!-- Encabezado -->
+    <div class="header-content">
+        <div class="container">
+            <h1>Decoramos tus cocinas: Reposteros, Tableros y más</h1>
+            <p>Calidad y garantía</p>
+            <a href="#contactanos" class="btn btn-custom">Contáctanos</a>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
