@@ -20,7 +20,7 @@
         
         .hero {
             
-                background-image: url('imagenes/closet1.jpg ');
+                background-image: url('fotos/fondoslide1.png');
                 background-size: contain   ; /* Ajusta el tamaño para contener completamente la imagen */
                 background-position: center top; /* Centra la imagen de fondo verticalmente en la parte superior */
                 height: 100vh; /* Usa 100vh para ocupar el alto completo del viewport */
@@ -102,7 +102,7 @@ body, html {
 .hero-text {
     text-align: left;
     color: white;
-    background-color: rgba(10, 11, 12, 0.884); 
+    background-color: rgba(0, 0, 0, 0.8); 
     padding: 20px;
     border-radius: 10px;
 }
@@ -178,3 +178,188 @@ footer.footer {
     margin-bottom: 0;
     padding-bottom: 0;
 }
+
+
+
+/* botones  */
+
+#btn-aplicar-cupon {
+    background-color: #1fb150; /* Cambia el color de fondo */
+    color: #fff; /* Cambia el color del texto */
+    padding: 12px 24px; /* Ajusta el padding */
+    font-size: 16px; /* Ajusta el tamaño de la fuente */
+    border-radius: 5px; /* Añade bordes redondeados */
+   
+}
+
+#btn-aplicar-cupon:hover {
+    background-color: #e68a00; /* Cambia el color de fondo al pasar el mouse */
+}
+@media (max-width: 768px) {
+    #btn-aplicar-cupon {
+        width: 50%; /* Hacer que el botón ocupe todo el ancho disponible */
+        padding: 10px; /* Reducir el padding */
+        font-size: 14px; /* Reducir el tamaño de la fuente */
+    }
+}
+
+@media (max-width: 480px) {
+    #btn-aplicar-cupon {
+        
+        padding: 8px;
+        font-size: 12px; /* Reducir aún más el tamaño de la fuente */
+    }
+}
+
+#btn-aplicar-cupon2 {
+    background-color: #1fb150; /* Cambia el color de fondo */
+    color: #fff; /* Cambia el color del texto */
+    padding: 12px 10px; /* Ajusta el padding */
+  
+    border-radius: 5px; /* Añade bordes redondeados */
+   
+}
+
+/* estilos de la seccion de nuestros beneficios */
+
+.beneficios {
+    display: flex;
+    justify-content: center;
+    padding: 40px 0;
+    background-color: #ffffff;
+}
+
+.contenido {
+    display: flex;
+    max-width: 1200px;
+    width: 100%;
+    align-items: center;
+}
+
+.texto {
+    flex: 1;
+    padding-right: 40px;
+}
+
+.titulo {
+    color: #f5a623; /* Color naranja */
+    font-size: 40px;
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+
+#subtitulo-beneficios {
+    color: #333;
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    margin-top: 0;
+}
+
+.lista-beneficios {
+    list-style: none;
+    padding: 0;
+}
+
+.lista-beneficios li {
+    font-size: 16px;
+    color: #2d3031;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding-left: 30px; /* Espacio para el icono */
+}
+
+.lista-beneficios i {
+    color: rgb(67, 166, 206); /* Cambia este valor al color que prefieras */
+    margin-right: 10px;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #ddd;
+    margin: 10px 0;
+    width: 100%;
+}
+
+.imagen {
+    flex: 0.7;
+}
+
+.imagen img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* Media Queries para hacer el diseño responsive */
+@media (max-width: 1024px) {
+    .contenido {
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: center;
+    }
+    
+    .texto {
+        padding-right: 0;
+        padding-bottom: 20px; /* Espacio adicional en la parte inferior */
+    }
+    
+    .titulo {
+        font-size: 30px; /* Tamaño de fuente más pequeño para pantallas más pequeñas */
+    }
+    
+    .subtitulo {
+        font-size: 36px; /* Tamaño de fuente más pequeño para pantallas más pequeñas */
+        margin-bottom: 20px;
+    }
+    
+    .imagen {
+        flex: 1;
+        margin-top: 20px; /* Espacio adicional en la parte superior para la imagen */
+    }
+}
+
+@media (max-width: 768px) {
+    .titulo {
+        font-size: 24px; /* Tamaño de fuente aún más pequeño */
+    }
+    
+    .subtitulo {
+        font-size: 28px; /* Tamaño de fuente aún más pequeño */
+        margin-bottom: 15px;
+    }
+    
+    .lista-beneficios li {
+        font-size: 16px; /* Tamaño de fuente más pequeño para pantallas pequeñas */
+        padding-left: 20px; /* Espacio reducido para el icono */
+    }
+    
+    .imagen {
+        flex: 1;
+        margin-top: 15px; /* Espacio adicional en la parte superior para la imagen */
+    }
+}
+
+@media (max-width: 480px) {
+    .titulo {
+        font-size: 20px; /* Tamaño de fuente más pequeño */
+    }
+    
+    .subtitulo {
+        font-size: 24px; /* Tamaño de fuente más pequeño */
+        margin-bottom: 10px;
+    }
+    
+    .lista-beneficios li {
+        font-size: 14px; /* Tamaño de fuente más pequeño */
+        padding-left: 15px; /* Espacio reducido para el icono */
+    }
+    
+    .imagen {
+        flex: 1;
+        margin-top: 10px; /* Espacio adicional en la parte superior para la imagen */
+    }
+}
+
