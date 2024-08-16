@@ -3,90 +3,103 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Christian's Muebles de Melamina</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-
+    <title>Decoración de Cocinas</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="estilos.css">
+       
+    
 </head>
+
 <body>
 
-    <header>
-        <div class="top-bar">
-            <div class="row align-items-center">
-                <div class="col-md-4 text-center text-md-left">
-                <a href="index.html">
-                    <img src="imagenes/logo.png" alt="Christian's Muebles de Melamina" class="img-fluid logo-img"></a>
+    <!-- Barra Superior -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="contact-info">
+                <div>
+                    <br>
+                    <br>
+                    <span><i class="fas fa-phone"></i> 981 324 207</span>
+                    <a href="mailto:maycoltorres@marmolygranitoariana.com"><i class="fas fa-envelope"></i><strong> mueblescristian@muebleriaperu.com</strong></a>
                 </div>
-                <div class="col-md-8 text-center contact-info">
-                    
-                <p style="color: white; font-weight: bold; ">FABRICACIÓN DE DISEÑOS EN MELAMINA</p>
-        
-                    <p style="color: white; font-weight: bold; ">CELULAR: 998224145</p>
-                    <p style="color: white; font-weight: bold; ">CORREO: MELAMINACRISTIAN@GMAIL.COM</p>
+                <div>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
                 </div>
             </div>
-        </div>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-          
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item"><a class="nav-link" href="inicio1.html">INICIO</a></li>
-                    <li class="nav-item"><a class="nav-link " href="nosotros.html">NOSOTROS</a></li>
-                    <li class="nav-item"><a class="nav-link" href="servicios.html">SERVICIOS</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">PROYECTOS</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contactanos.html">CONTÁCTANOS</a></li>
-                </ul>
-            </div>
-        </nav>
-    </header>
-   
-    <br>
-            <br>
-            <br>
-            <br>
-    <div class="hero">
-        <div class="hero-text text-center">
-           
-           <p><h1>"CHRISTIAN'S MUEBLES"</h1></p> 
-            <h3>DISEÑAMOS Y FABRICAMOS MUEBLES EN MELAMINA</h3>
-            
-            <p>Todo tipo de trabajos en melamina con diseños exclusivos, modernos y personalizados, hechos a medida y según sus requerimientos.</p>
         </div>
     </div>
 
-    <style>
-        .card button {
-            background-color: black; /* Color de fondo del botón */
-            color: white; /* Color de la letra del botón */
-            border: none;
-            padding: 10px 10px;
-            cursor: pointer;
-        }
-        .card button:hover {
-            background-color: #0056b3; /* Color de fondo del botón al pasar el mouse */
-        }
-        .card-img-top-custom {
-    object-fit: contain; /* O usa 'cover' si prefieres que la imagen cubra el contenedor */
-    width: 100%; /* Asegúrate de que la imagen se ajuste al ancho del contenedor */
-    height: auto; /* Mantén la proporción de la imagen */
-}
+    <!-- Menú de Navegación -->
+    <nav class="navbar navbar-expand-lg navbar-custom" style="margin-top: 40px;">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <br>
+                <img src="imagenes/logosinfondo.png" alt="Logo"> <!-- Reemplaza con el logo correspondiente -->
+            </a>
+            <button id="menu-toggle" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-bars"></i>
+    </button>
+    
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="inicio1.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="servicios.html">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="proyectos">Proyectos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contactanos.html">Contáctanos</a>
+                    </li>
+                </ul>
+                <a href="#contactanos" class="btn btn-contact btn-contact-small">
+                    <i class="fab fa-whatsapp icon-whatsapp"></i> Contáctanos
+                </a>
+            </div>
+        </div>
+    </nav>
 
-     /* Añade este estilo a tu CSS */
-.row > .col-md-3 {
-    margin-bottom: 30px; /* Ajusta este valor según el espacio que necesites */
-}
+    <!-- Encabezado -->
+    <div class="header-content">
+        <div class="container">
+            <h1>Decoramos tus cocinas: Reposteros, Tableros y más</h1>
+            <p>Calidad y garantía</p>
+            <a href="#contactanos" class="btn btn-custom">Contáctanos</a>
+        </div>
+    </div>
 
-    </style>
-</head>
-<body>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            // Aplica el color cuando el ítem del menú es tocado o cliqueado
+            $('.navbar-nav .nav-item .nav-link').on('touchstart mouseenter', function(){
+                $(this).css('color', '#ff6347'); // Cambia #ff6347 por el color que desees
+            });
+            
+            // Opcional: Restablece el color cuando el ítem ya no está siendo tocado
+            $('.navbar-nav .nav-item .nav-link').on('touchend mouseleave', function(){
+                $(this).css('color', '#ffffff'); // Cambia #ffffff por el color original
+            });
+        });
+    </script>
+
+
+
     <div class="container my-5">
         <div class="heading">
-            <h1>ROPEROS MODERNOS</h1>
+            <h2>ROPEROS MODERNOS</h2>
             <hr>
         </div>
 
@@ -100,7 +113,7 @@
                 <h5 class="card-title">Ropero Armario 2 puertas Bronco 6 cajones</h5>
                 <p class="card-text">Color: Blanco</p>
                 <p class="card-text"><strong>S/223.90 C/U</strong></p>
-                <button onclick="addToCart('Ropero Armario 2 puertas Bronco 6 cajones', 'Blanco', 223.90, 'fotos/ropero1.jpg')">
+                <button id=botoninicio onclick="addToCart('Ropero Armario 2 puertas Bronco 6 cajones', 'Blanco', 223.90, 'fotos/ropero1.jpg')">
                     <h6>Agregar al carrito</h6>
                 </button>
             </div>
@@ -115,7 +128,7 @@
                             <h5 class="card-title">Ropero Armario Moderno Rivera 1 puerta 6 cajones</h5>
                             <p class="card-text">Color: Blanco-Duna</p>
                             <p class="card-text"><strong>S/723.90 C/U</strong></p>
-                            <button onclick="addToCart('Ropero Armario Moderno Rivera 1 puerta 6 cajones', 'Blanco-Duna', 723.90, 'fotos/ropero2.png')">
+                            <button id=botoninicio onclick="addToCart('Ropero Armario Moderno Rivera 1 puerta 6 cajones', 'Blanco-Duna', 723.90, 'fotos/ropero2.png')">
                     <h6>Agregar al carrito</h6>
                 </button>
                         </div>
@@ -131,7 +144,7 @@
                                         <h5 class="card-title">Ropero Moderno Doha 4 puertas 2 cajones</h5>
                                         <p class="card-text">color Blanco/Duna</p>
                                         <p class="card-text"><strong>S/926.90 C/U</strong></p>
-                                        <button onclick="addToCart('Ropero Moderno Doha 4 puertas 2 cajones', 'Blanco/Duna', 926.90, 'fotos/ropero3.jpg')">
+                                        <button  id=botoninicio onclick="addToCart('Ropero Moderno Doha 4 puertas 2 cajones', 'Blanco/Duna', 926.90, 'fotos/ropero3.jpg')">
                     <h6>Agregar al carrito</h6>
                 </button>
                 </button>
@@ -146,7 +159,7 @@
                                         <h5 class="card-title">Ropero Moderno 2 puertas 3 cajones Mendez</h5>
                                         <p class="card-text">color: Negro</p>
                                         <p class="card-text"><strong>S/1126.90 C/U</strong></p>
-                                        <button onclick="addToCart('Ropero Moderno 2 puertas 3 cajones Mendez', 'Negro', 1126.90, 'fotos/ropero4.jpg')">
+                                        <button id=botoninicio onclick="addToCart('Ropero Moderno 2 puertas 3 cajones Mendez', 'Negro', 1126.90, 'fotos/ropero4.jpg')">
                     <h6>Agregar al carrito</h6>
                 </button>
                                     </div>
@@ -160,7 +173,7 @@
                                         <h5 class="card-title">Ropero Monterrey 6 Puertas 6 Cajones </h5>
                                         <p class="card-text">color:Cafe-tabaco</p>
                                         <p class="card-text"><strong>S/1132.90 C/U</strong></p>
-                                        <button onclick="addToCart('Ropero Monterrey 6 Puertas 6 Cajones', 'color:Cafe-tabaco', 1132.90, 'fotos/ropero5.png')">
+                                        <button id=botoninicio onclick="addToCart('Ropero Monterrey 6 Puertas 6 Cajones', 'color:Cafe-tabaco', 1132.90, 'fotos/ropero5.png')">
                     <h6>Agregar al carrito</h6>
                 </button>
 </div>
@@ -175,7 +188,7 @@
                                         <h5 class="card-title">Ropero Tokio Madesa 2 Puertas Corredizas Con Espejo</h5>
                                         <p class="card-text">Color: Blanco</p>
                                         <p class="card-text"><strong>S/1026.90 C/U</strong></p>
-                                        <button onclick="addToCart('Ropero Tokio Madesa 2 Puertas Corredizas Con Espejo', 'Color: Blanco', 1026.90, 'fotos/ropero6.png')">
+                                        <button id=botoninicio onclick="addToCart('Ropero Tokio Madesa 2 Puertas Corredizas Con Espejo', 'Color: Blanco', 1026.90, 'fotos/ropero6.png')">
                     <h6>Agregar al carrito</h6>
                 </button>
                                     </div>
@@ -189,7 +202,7 @@
                                         <h5 class="card-title">Ropero Belem 8 Puertas 4 Cajones </h5>
                                         <p class="card-text">Color: Castaño-Blanco</p>
                                         <p class="card-text"><strong>S/1632.90 C/U</strong></p>
-                                        <button onclick="addToCart('Ropero Belem 8 Puertas 4 Cajones', 'Color: Castaño-Blanco', 1632.90, 'fotos/ropero7.png')">
+                                        <button id=botoninicio onclick="addToCart('Ropero Belem 8 Puertas 4 Cajones', 'Color: Castaño-Blanco', 1632.90, 'fotos/ropero7.png')">
                     <h6>Agregar al carrito</h6>
                 </button>
                                     </div>
@@ -203,7 +216,7 @@
                                         <h5 class="card-title">Ropero Cris 4 Puertas 2 Cajones + Espacio Zapatero</h5>
                                         <p class="card-text">Color: Negro-Amaderado</p>
                                         <p class="card-text"><strong>S/1523.90 C/U</strong></p>
-                                        <button onclick="addToCart('Ropero Cris 4 Puertas 2 Cajones + Espacio Zapatero', 'Color: Negro-Amaderado', 1523.90, 'fotos/ropero8.png')">
+                                        <button id=botoninicio onclick="addToCart('Ropero Cris 4 Puertas 2 Cajones + Espacio Zapatero', 'Color: Negro-Amaderado', 1523.90, 'fotos/ropero8.png')">
                     <h6>Agregar al carrito</h6>
                 </button>
                                         
@@ -250,7 +263,7 @@
 
  <div class="container my-5">
         <div class="heading">
-            <h1>MUEBLES DE OFICINA</h1>
+            <h2>MUEBLES DE OFICINA</h2>
             <hr>
         </div>
       
@@ -267,7 +280,7 @@
                 <h5 class="card-title">Escritorio para Oficina movible </h5>
                 <p class="card-text">Color: Cedro</p>
                 <p class="card-text"><strong>S/623.90 C/U</strong></p>
-                <button onclick="addToCart('Escritorio para Oficina movible', 'Color: Cedro', 623.90, 'fotos/oficina1.png')">
+                <button id=botoninicio onclick="addToCart('Escritorio para Oficina movible', 'Color: Cedro', 623.90, 'fotos/oficina1.png')">
                     <h6>Agregar al carrito</h6>
                 </button>
             </div>
@@ -283,7 +296,7 @@
                 <h5 class="card-title">Credenza de Oficina 2 puertas batientes  </h5>
                 <p class="card-text">color: Blanco-Negro</p>
                 <p class="card-text"><strong>S/626.90 C/U</strong></p>
-                <button onclick="addToCart('Credenza de Oficina 2 puertas batientes ', 'color: Blanco-Negro', 626.90, 'fotos/oficina2.png')">
+                <button id=botoninicio onclick="addToCart('Credenza de Oficina 2 puertas batientes ', 'color: Blanco-Negro', 626.90, 'fotos/oficina2.png')">
                     <h6>Agregar al carrito</h6>
                 </button>
             </div>
@@ -300,7 +313,7 @@
                                             <h5 class="card-title"> Escritorio Ejecutivo con 2 correderas telescopicas </h5>
                                             <p class="card-text">Color: Teka Artico</p>
                                             <p class="card-text"><strong>S/826.90 C/U</strong></p>
-                                            <button onclick="addToCart('Escritorio Ejecutivo con 2 correderas telescopicas',
+                                            <button id=botoninicio onclick="addToCart('Escritorio Ejecutivo con 2 correderas telescopicas',
                                              'Color: Teka Artico',826.90,'fotos/oficina3.png')"><h6>Agregar al carrito</h6></button>
                                         </div>
                                     </div>
@@ -314,7 +327,7 @@
                                             <h5 class="card-title">Escritorio basico 2 cajones</h5>
                                             <p class="card-text">Color: Cedro</p>
                                             <p class="card-text"><strong>S/480.00 C/U</strong></p>
-                                            <button onclick="addToCart('Escritorio basico 2 cajones','Color: Cedro',480.00,
+                                            <button id=botoninicio onclick="addToCart('Escritorio basico 2 cajones','Color: Cedro',480.00,
                                             'fotos/oficina4.png')"><h6>Agregar al carrito</h6></button>
                                         </div>
                                     </div>
@@ -328,7 +341,7 @@
                                             <h5 class="card-title">Mueble para Recepcion Cris </h5>
                                             <p class="card-text">Color: Caramel</p>
                                             <p class="card-text"><strong>S/1132.90 C/U</strong></p>
-                                            <button onclick="addToCart('Mueble para Recepcion Cris','Color: Caramel',1132.90,'fotos/oficina5.png')"><h6>Agregar al carrito</h6>
+                                            <button id=botoninicio onclick="addToCart('Mueble para Recepcion Cris','Color: Caramel',1132.90,'fotos/oficina5.png')"><h6>Agregar al carrito</h6>
                                         </button>
                                         </div>
                                     </div>
@@ -342,7 +355,7 @@
                                             <h5 class="card-title">Locker 1 x 3 Puertas movible </h5>
                                             <p class="card-text">Color: Cedro</p>
                                             <p class="card-text"><strong>S/550.00 C/U</strong></p>
-                                            <button onclick="addToCart('Locker 1 x 3 Puertas movible','Color: Cedro',550.00,
+                                            <button id=botoninicio onclick="addToCart('Locker 1 x 3 Puertas movible','Color: Cedro',550.00,
                                             'fotos/oficina6.png')"><h6>Agregar al carrito</h6></button>
                                         </div>
                                     </div>
@@ -357,7 +370,7 @@
                                             <h5 class="card-title">Locker 2 x 4 Puertas movible </h5>
                                             <p class="card-text">Color: Rovere-Negro</p>
                                             <p class="card-text"><strong>S/989.00 C/U</strong></p>
-                                            <button onclick="addToCart('Locker 2 x 4 Puertas movible ','Color: Rovere-Negro',989.00,
+                                            <button id=botoninicio onclick="addToCart('Locker 2 x 4 Puertas movible ','Color: Rovere-Negro',989.00,
                                             'fotos/oficina7.png')"><h6>Agregar al carrito</h6></button>
                                         </div>
                                     </div>
@@ -371,7 +384,7 @@
                                             <h5 class="card-title">Librero Estante puertas libres </h5>
                                             <p class="card-text">Color: Arce</p>
                                             <p class="card-text"><strong>S/680.00 C/U</strong></p>
-                                            <button onclick="addToCart('Librero Estante puertas libres',
+                                            <button id=botoninicio onclick="addToCart('Librero Estante puertas libres',
                                             'Color: Arce',680.00,'fotos/oficina8.png')"><h>Agregar al carrito</h6></button>
                                         </div>
                                     </div>
@@ -409,7 +422,7 @@
    <div class="container my-5">
    
         <div class="heading">
-            <h1>REPOSTEROS ALTOS Y BAJOS</h1>
+            <h2>REPOSTEROS ALTOS Y BAJOS</h2>
             <hr>
         </div>
         <p class="text-center">
@@ -434,7 +447,7 @@
                                         <h5 class="card-text">Mueble de Cocina Multiusos  3 cajones 4 puertas </h5>
                                         <p class="card-text">Color: Blanco-Gris</p>
                                         <p class="card-text"><strong>S/1550.00 C/U</strong></p>
-                                        <button onclick="addToCart('Mueble de Cocina Multiusos  3 cajones 4 puertas',
+                                        <button id=botoninicio onclick="addToCart('Mueble de Cocina Multiusos  3 cajones 4 puertas',
                                         'Color: Blanco-Gris',1550.00,'fotos/reportero1.png')"><h6>Agregar al carrito</h6></button>
                                     </div>
                                 </div>
@@ -449,7 +462,7 @@
                                         <h5 class="card-title">Mueble de Cocina Multiusos 3 cajones 4 puertas </h5>
                                         <p class="card-text">Color: Cedro </p>
                                         <p class="card-text"><strong>S/723.90 C/U</strong></p>
-                                        <button onclick="addToCart('Mueble de Cocina Multiusos 3 cajones 4 puertas',
+                                        <button id=botoninicio onclick="addToCart('Mueble de Cocina Multiusos 3 cajones 4 puertas',
                                         'Color: Cedro',723.90,'fotos/reportero2.png')"><h6>Agregar al carrito</h6></button>
                                     </div>
                                 </div>
@@ -464,7 +477,7 @@
                                         <h5 class="card-title">Armario de cocina completo 11 puertas 1 cajon</h5>
                                         <p class="card-text">Color: Negro-Cedro</p>
                                         <p class="card-text"><strong>S/2500.00 C/U</strong></p>
-                                        <button onclick="addToCart('Armario de cocina completo 11 puertas 1 cajon',
+                                        <button id=botoninicio onclick="addToCart('Armario de cocina completo 11 puertas 1 cajon',
                                         'Color: Negro-Cedro',2500.00,'fotos/reportero3.png')"><h6>Agregar al carrito</h6></button>
                                     </div>
                                 </div>
@@ -479,7 +492,7 @@
                                         <h5 class="card-title">Mueble para cocina 4 puertas 3 cajones </h5>
                                         <p class="card-text">Color: Blanco</p>
                                         <p class="card-text"><strong>S/1500.00 C/U</strong></p>
-                                        <button onclick="addToCart('Mueble para cocina 4 puertas 3 cajones',
+                                        <button id=botoninicio onclick="addToCart('Mueble para cocina 4 puertas 3 cajones',
                                         'Color: Blanco',1500.00,'fotos/reportero4.png')"><h6>Agregar al carrito</h6></button>
                                     </div>
                                 </div>
@@ -493,7 +506,7 @@
                                         <h5 class="card-title"> Mueble de cocina Alacena Completo  </h5>
                                         <p class="card-text">Color: Gris </p>
                                         <p class="card-text"><strong>S/3000.00 C/U</strong></p>
-                                        <button onclick="addToCart(' Mueble de cocina Alacena Completo ',
+                                        <button id=botoninicio onclick="addToCart(' Mueble de cocina Alacena Completo ',
                                         'Color: Gris',3000.00 ,'fotos/reportero5.jpg')"><h6>Agregar al carrito</h6></button>
                                     </div>
                                 </div>
@@ -508,7 +521,7 @@
                                         <h5 class="card-title">Mueble de Cocina Moderno 6 puertas 1 cajón </h5>
                                         <p class="card-text">Color: Blanco</p>
                                         <p class="card-text"><strong>S/1300.00 C/U</strong></p>
-                                        <button onclick="addToCart('Mueble de Cocina Moderno 6 puertas 1 cajón ',
+                                        <button id=botoninicio onclick="addToCart('Mueble de Cocina Moderno 6 puertas 1 cajón ',
                                         'Color: Blanco',1300.00,'fotos/reportero6.png')"><h6>Agregar al carrito</h6></button>
                                     </div>
                                 </div>
@@ -522,7 +535,7 @@
                                         <h5 class="card-title">Mueble de Cocina Moderno 1cajon x 3puertas </h5>
                                         <p class="card-text">Color: Negro</p>
                                         <p class="card-text"><strong>S/1350.00 C/U</strong></p>
-                                        <button onclick="addToCart('Mueble de Cocina Moderno 1cajon x 3puertas ','Color: Negro',1350.00,'fotos/reportero7.png'
+                                        <button id=botoninicio onclick="addToCart('Mueble de Cocina Moderno 1cajon x 3puertas ','Color: Negro',1350.00,'fotos/reportero7.png'
                                         )"><h6>Agregar al carrito</h6></button>
                                     </div>
                                 </div>
@@ -536,7 +549,7 @@
                                         <h5 class="card-title">Mueble de cocina simple 4puertas x 1cajon </h5>
                                         <p class="card-text">Color: Negro-Wengue</p>
                                         <p class="card-text"><strong>S/550.00 C/U</strong></p>
-                                        <button onclick="addToCart('Mueble de cocina simple 4puertas x 1cajon',
+                                        <button id=botoninicio onclick="addToCart('Mueble de cocina simple 4puertas x 1cajon',
                                         'Color: Negro-Wengue',550.00,'fotos/reportero8.png')"><h6>Agregar al carrito</h6></button>
                                     </div>
                                 </div>
@@ -550,7 +563,7 @@
     </div>
 </div>
                         
-    </body>
+   
 
 <style>
 
@@ -758,7 +771,7 @@ p {
 
 /* Estilo del botón al pasar el ratón (hover) */
 #contact-btn:hover {
-    background-color: #e65c00; /* Color de fondo al pasar el ratón */
+    background-color: #0400e6; /* Color de fondo al pasar el ratón */
     transform: scale(1.05); /* Agranda ligeramente el botón */
 }
 
@@ -770,17 +783,15 @@ p {
 </style>
         <h2>Comencemos el proyecto de tus sueños</h2>
         <p>No dudes en buscarnos nuestros clientes son la garantia.</p>
-        <button id="contact-btn" onclick="window.location.href='contacto.html'"><h5>Contáctanos</h5></button>
+        <button id="contact-btn" onclick="window.location.href='contactanos.html'"><h5>Contáctanos</h5></button>
     </div>
 </div>
 
     
       
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-        <link rel="stylesheet" href="estilos.css">
-        <style>
-            
-        </style>
+     
+      
         
         <section class="beneficios" id="beneficios-section">
             <div class="contenido">
@@ -820,48 +831,240 @@ p {
             </div>
         </div>
     </div>
-</div>
-
-      
-        
-            
+</div>      
     </section>
-</body>
-
-<div class="container my-5">
-
-    <footer class="footer ">
-        <div class="container-responsive  text-center">
-            <div class="row">
-                <div class="col-md-6 ">
-                    <h5>Informes</h5>
-                    <p>
-                        Av. Humboldt, Alfonso Ugarte 3ra etapa Mz A Lote 3 Gregorio<br>
-                        Albarracín Lanchipa, Tacna, Perú<br>
-                        <p><i class="fas fa-phone-alt"></i> CEL: 998224145</p>
-                        <p><i class="fas fa-phone-alt"></i> CEL: 998224145</p>
-                        <p><i class="fas fa-envelope"></i> CORREO: MELAMINACRISTIAN@GMAIL.COM</p>
-                    </p>
-                </div>
-                <div class="col-md-6 " >
-                    <h5>Redes Sociales</h5>
-                    <p>
-                        Instagram: MueblesChristian<br><br>
-                        WhatsApp: 923 711 418<br><br>
-                        Facebook: Muebles Christian
-                    </p>
-                </div>
-            </div>
-        </div>
-    </footer>
-    
-    
-
-
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
    
+
+    <footer id="unique-footer" class="footer">
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3>NUESTROS PRODUCTOS</h3>
+                <ul>
+                    <li><img src="https://img.icons8.com/material-outlined/24/ffffff/checkmark--v1.png" alt="Check"> Muebles de Cocina</li>
+                    <li><img src="https://img.icons8.com/material-outlined/24/ffffff/checkmark--v1.png" alt="Check"> Salas de Entretenimiento</li>
+                    <li><img src="https://img.icons8.com/material-outlined/24/ffffff/checkmark--v1.png" alt="Check"> Muebles de Oficina</li>
+                    <li><img src="https://img.icons8.com/material-outlined/24/ffffff/checkmark--v1.png" alt="Check"> Muebles de Dormitorio</li>
+                    <li><img src="https://img.icons8.com/material-outlined/24/ffffff/checkmark--v1.png" alt="Check"> Closets</li>
+                    <li><img src="https://img.icons8.com/material-outlined/24/ffffff/checkmark--v1.png" alt="Check"> Puertas</li>
+                    
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>UBÍCANOS</h3>
+                <p>
+                    <img src="fotos/icono11.png" alt="Ubicación" id="email-icon"> Programa de Vivienda Las Torres de Pachacamac<br>
+                    Mz.A Lt.22 - Distrito de Pachacamac, Lima - Perú
+                </p>
+                <p>
+                    <img src="fotos/icono12.png" id="email-icon" alt="Teléfono"> Celulares:<br>
+                    945 291927 / 990 851750
+                </p>
+            </div>
+            <div class="footer-column">
+                <h3>ESCRÍBENOS</h3>
+                <p>Quieres comunicarte y solicitar información? Escríbenos por este medio</p>
+                <p><a href="mailto:consultas@decorcerna.com"><img src="fotos/icono10.png" 
+                    alt="Email" id="email-iconn"> muebleschristian@mueblesperu.com</a></p>
+            </div>
+            <div class="footer-column">
+                <h3>SÍGUENOS EN:</h3>
+                <div class="social-icons">
+                    <a href="#"><img src="fotos/icono13.png" alt="Facebook"></a>
+                    <a href="#"><img src="fotos/iconowasap.png" alt="Twitter"></a>
+                    <a href="#"><img src="fotos/tiktok.png" alt="YouTube"></a>
+                  
+                </div>
+            </div>
+        </div>
+    
+        <div class="footer-bottom">
+            <p>© Copyright 2024, Christian's Muebles - Todos los Derechos Reservados.</p>
+            <p>Diseño Web <a href="https://www.facebook.com" target="_blank">BRVF®</a></p>
+        </div>
+    </footer>
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap">
+    
+    
+    
+    <style>
+    /* Estilo general del pie de página */
+    #unique-footer {
+        background-color: #005CA8; /* Color de fondo */
+        color: white; /* Color del texto */
+        padding: 20px 0;
+        font-family: 'Lato', sans-serif;
+    }
+    
+    #unique-footer .footer-container {
+        display: flex;
+        justify-content: space-between;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+        flex-wrap: wrap; /* Permite que las columnas se envuelvan en pantallas pequeñas */
+    }
+    
+    #unique-footer .footer-column {
+        width: 23%;
+        margin-bottom: 20px; /* Espacio entre columnas en pantallas pequeñas */
+    }
+    
+    #unique-footer .footer-column h3 {
+        font-size: 1.2rem;
+        margin-bottom: 10px;
+        font-weight: bold;
+        color: black;
+    }
+    
+    #unique-footer .footer-column ul {
+        list-style: none;
+        padding: 0;
+    }
+    
+    #unique-footer .footer-column ul li {
+        margin-bottom: 5px;
+        font-size: 0.9rem;
+        display: flex;
+        align-items: center;
+    }
+    
+    #unique-footer .footer-column ul li img {
+        margin-right: 20px;
+    }
+    #email-icon {
+        width: 30px; /* Ancho personalizado */
+        height: 30px; /* Alto personalizado */
+    }
+    #email-iconn {
+        width: 35px; /* Ancho personalizado */
+        height: 35px; /* Alto personalizado */
+    }
+    
+    
+    #unique-footer .footer-column p {
+        margin: 10px 0;
+        font-size: 0.9rem;
+        display: flex;
+        align-items: center;
+    }
+    
+    #unique-footer .footer-column p img {
+        margin-right: 8px;
+    }
+    
+    #unique-footer .footer-column a {
+        color: white;
+        text-decoration: none;
+    }
+    
+    #unique-footer .footer-column a:hover {
+        text-decoration: underline;
+    }
+    
+    #unique-footer .social-icons a {
+        display: inline-block;
+        margin-right: 10px;
+    }
+    
+    #unique-footer .social-icons img {
+        width: 24px;
+        height: 24px;
+    }
+    
+    #unique-footer .footer-bottom {
+        text-align: center;
+        margin-top: 20px;
+        border-top: 1px solid rgba(255, 255, 255, 0.2);
+        padding-top: 10px;
+        font-size: 0.8rem;
+    }
+    
+    #unique-footer .footer-bottom a {
+        color: white;
+        text-decoration: none;
+    }
+    
+    #unique-footer .footer-bottom a:hover {
+        text-decoration: underline;
+    }
+    
+    /* Responsive Styles */
+    @media (max-width: 1024px) {
+        #unique-footer .footer-container {
+            flex-direction: column;
+            align-items: center;
+        }
+    
+        #unique-footer .footer-column {
+            width: 100%;
+            text-align: center;
+        }
+    
+        #unique-footer .footer-column:not(:last-child) {
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2); /* Separador entre columnas */
+            padding-bottom: 20px;
+        }
+    }
+    
+    @media (max-width: 768px) {
+        #unique-footer .footer-column h3 {
+            font-size: 1rem !important; /* Aumenta el tamaño del texto */
+        }
+    
+        #unique-footer .footer-column ul li {
+            font-size: 1rem !important; /* Aumenta el tamaño del texto */
+        }
+    
+        #unique-footer .footer-column p {
+            font-size: 1rem !important; /* Aumenta el tamaño del texto */
+        }
+    
+        #unique-footer .social-icons img {
+            width: 36px !important; /* Aumenta el tamaño de los íconos */
+            height: 36px !important;
+        }
+    
+        #unique-footer .footer-bottom {
+            font-size: 1rem !important; /* Aumenta el tamaño del texto */
+        }
+    }
+    
+    @media (max-width: 480px) {
+        body {
+            font-size: 1rem; /* Aumenta el tamaño base del texto */
+            line-height: 1; /* Mejora la legibilidad */
+        }
+    
+        #unique-footer .footer-column h3 {
+            font-size: 2rem; /* Tamaño del texto en encabezados */
+        }
+    
+        #unique-footer .footer-column ul li {
+            font-size: 1rem; /* Tamaño del texto en listas */
+        }
+    
+        #unique-footer .footer-column p {
+            font-size: 1rem; /* Tamaño del texto en párrafos */
+        }
+    
+        #unique-footer .footer-bottom {
+            font-size: 1rem; /* Tamaño del texto en la parte inferior */
+        }
+    
+        #unique-footer .social-icons i {
+            font-size: 40px; /* Tamaño de los íconos sociales */
+        }
+    }
+    
+    </style>
+    
+
+
+</body>
 
 </html>
 

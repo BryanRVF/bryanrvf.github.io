@@ -1,121 +1,255 @@
-.top-bar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    background-color: #53a0ec;
-    height: 100px; /* Altura fija de la barra */
-    width: 100%;
-    padding: 0 100px; /* Ajusta el padding según necesidades */
-    z-index: 1000;
-    white-space: nowrap; /* Evita que el texto se divida en varias líneas */
-    overflow: hidden; /* Oculta el texto que se desborda */
-    text-overflow: ellipsis; /* Muestra puntos suspensivos (...) cuando el texto se desborda */
-} 
-        .logo-img {
-            max-width: 100%;
-            height: 120px;
-
-        }
-      
-        
-        .hero {
-            
-                background-image: url('fotos/fondoslide1.png');
-                background-size: contain   ; /* Ajusta el tamaño para contener completamente la imagen */
-                background-position: center top; /* Centra la imagen de fondo verticalmente en la parte superior */
-                height: 100vh; /* Usa 100vh para ocupar el alto completo del viewport */
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                animation: slide 20s infinite linear;
-                
-            }
-            
-        
-        
-        .hero-text h1 {
-            font-size: 3rem;
-            
-        }
-        
-        .hero-text h2 {
-            font-size: 2rem;
-           
-        }
-        .card-img-top-custom {
-            height: 200px;
-            object-fit: cover;
-        }
-
-      
-/* Estilos generales */
-body, html {
+body {
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    font-family: Helvetica, Arial, sans-serif;
-  
-    background: #f2f2f2;
-    overflow-x: hidden; 
-   
-    line-height: 1.5em;
-   
-    
 }
 
-/* Estilos para el header (navbar) */
-
-
-.navbar {
+/* Estilos para la barra superior */
+.top-bar {
+    z-index: 1000;
+    color: white;
+    font-size: 0.9rem;
+    position: absolute;
     width: 100%;
-    position: fixed; /* Fija el menú de navegación en la parte superior */
-    z-index: 1100; 
- top: 100px;
-
-
-
+    z-index: 2;
+    top: 0;
+    font-size: 12px; /* Tamaño más pequeño del texto */
 }
-.navbar img {
-    height: 50px;
-    margin-right: 30px;
+.top-bar::after {
+    content: "";
+    display: block;
+
+    position: absolute;
+    bottom: -10px; /* Ajusta la posición vertical de la línea */
+    left: 10%; /* Ajusta la distancia desde el borde izquierdo */
+    right: 10%; /* Ajusta la distancia desde el borde derecho */
+    height: 2px; /* Grosor de la línea */
+    background-color: white; /* Color de la línea */
+}
+.top-bar .contact-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1px 20px;
+    flex-wrap: wrap; /* Permite que los elementos se acomoden en varias líneas en pantallas pequeñas */
 }
 
-.navbar a {
+.top-bar .contact-info a {
     color: white;
     text-decoration: none;
-  
-    padding: 10px 16px; 
-}
-
-.navbar a:hover {
-    background-color: rgb(204, 37, 101);
+    margin-left: 10px;
+    
     
 }
 
-/* Estilos para el header (hero) */
+.top-bar .contact-info i {
+    color: #3795d4;
+    margin-right: 5px;
+}
+.top-bar .contact-info a .fab {
+    color: #e0e8ee; /* Esto hará que los íconos de Facebook e Instagram estén en blanco */
+    font-size: 15px;
+    vertical-align: middle; /* Ajusta la alineación vertical */
+    margin-top: 10px; /* Ajusta el margen superior si es necesario */
+}
+/* Estilos para el menú de navegación */
+.navbar-custom {
 
-
-@keyframes slide {
-    0% { background-position: 0 0; }
-    100% { background-position: 2000px 0; }
+    background-color: transparent;
+    border-bottom: 0;
+    position: absolute;
+    width: 100%;
+    z-index: 2;
+    top: -2px; 
+    font-size: 0.8rem; /* Ajusta este valor para cambiar el tamaño de la fuente global */
 }
 
-.hero-text {
-    text-align: left;
+
+/* Ajustes para el menú de navegación en pantallas pequeñas */
+
+
+
+@media (max-width: 768px) {
+.navbar-custom {
+margin-top: 100px; /* Ajusta el espacio superior para el menú en pantallas pequeñas */
+}
+
+.navbar-custom .navbar-brand {
+margin-top: 30px; /* Ajusta el margen superior del logo en pantallas pequeñas */
+}
+}
+
+@media (max-width: 768px) {
+.navbar-toggler {
+border: none !important; /* Elimina el borde del botón */
+box-shadow: none !important; /* Elimina la sombra del botón */
+}
+
+.navbar-toggler:focus, 
+.navbar-toggler:active {
+outline: none !important; /* Elimina el borde de enfoque */
+box-shadow: none !important; /* Asegura que no haya sombra aplicada */
+}
+
+.navbar-toggler-icon {
+background-color: transparent !important; /* Asegura que el fondo del ícono sea transparente */
+}
+
+
+}
+
+/* Estilo para el menú de navegación en dispositivos móviles */
+/* Estilo para el menú de navegación en dispositivos móviles */
+@media (max-width: 768px) {
+    .navbar-nav .nav-item .nav-link {
+        color: white; /* Color de texto predeterminado en modo responsive */
+        transition: color 0.3s ease; /* Transición suave para el cambio de color */
+    }
+
+    .navbar-nav .nav-item .nav-link:hover {
+        color: #f8f9fa; /* Color de texto al pasar el mouse en modo responsive */
+        background-color: #1a4ae6; /* Fondo de color al pasar el mouse en modo responsive */
+        border-radius: 0.25rem; /* Radio de borde opcional en modo responsive */
+    }
+
+    .navbar-nav .nav-item .nav-link.active {
+        color: #007bff; /* Color de texto para el elemento activo en modo responsive */
+        background-color: transparent; /* Fondo transparente para el elemento activo en modo responsive */
+    }
+}
+
+
+
+
+.navbar-toggler-icon {
+width: 25px;
+height: 3px;
+background-color: white;
+display: block;
+position: relative;
+margin-top: 20px; 
+}
+
+.navbar-toggler-icon::before,
+.navbar-toggler-icon::after {
+content: '';
+width: 25px;
+height: 5px;
+background-color: white;
+display: block;
+position: absolute;
+left: 0;
+transition: all 0.5s ease;
+}
+
+.navbar-toggler-icon::before {
+top: -8px;
+}
+
+.navbar-toggler-icon::after {
+top: 8px;
+}
+
+
+/* Cambia la animación cuando se hace clic */
+
+
+
+
+.navbar-custom .navbar-brand img {
+    height: 80px;
+    margin-left: 50px;
+    margin-top: -20px; 
+ 
+}
+
+.navbar-custom .navbar-nav .nav-link {
     color: white;
-    background-color: rgba(0, 0, 0, 0.8); 
-    padding: 20px;
-    border-radius: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 0 15px;
+}
+
+.navbar-custom .navbar-nav .nav-link:hover {
+    color: #d4af37;
+}
+
+.navbar-custom .btn-contact {
+    background-color: #d4af37;
+    color: white;
+    padding: 8px 20px;
+    border-radius: 5px; /* Rectangular */
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 0.8rem;
+}
+
+.navbar-custom .btn-contact:hover {
+    background-color: #30b37c; /* Color de fondo cuando se pasa el mouse */
+}
+
+/* Estilos para el encabezado */
+.header-content {
+    background-image: url('fotos/fondos6.png'); /* Reemplaza con la URL de la imagen de fondo */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    position: relative;
+    padding: 20px; /* Espacio alrededor del contenido para pantallas pequeñas */
+}
+
+.header-content::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Oscurece la imagen de fondo */
+}
+
+.header-content h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    z-index: 2  ;
+    position: relative; 
+}
+
+.header-content p {
+    font-size: 1.5rem;
+    margin-top: 20px;
+    z-index: 1;
+    position: relative; 
+}
+
+.header-content .btn-custom {
+    background-color: #d45637;
+    color: white;
+    padding: 10px 30px;
+    font-size: 1.2rem;
+    margin-top: 30px;
+    border-radius: 20px;
+    border: none;
+    z-index: 1;
+}
+
+.header-content .btn-custom:hover {
+    background-color: #30b39d;
+}
+
+.icon-whatsapp {
+    font-size: 1rem; /* Ajusta este valor según el tamaño deseado */
+    margin-right: 5px; /* Ajusta el espacio entre el ícono y el texto si es necesario */
 }
 
 
-.hero-text h1 {
-    margin: 0;
-    font-size: 2em;
-}
 
-.hero-text p {
-    margin: 10px 0 0;
-}
+
 
 /* Estilos para la sección de proyectos */
 .projects {
@@ -138,17 +272,9 @@ footer.footer {
     color: white !important; /* Color de la letra */
     
     text-align: center;
-    background-color: #212529 !important; /* Color de fondo */
+   
 }
-
-.footer h5 {
-    margin-top: 0;
-    font-weight: bold;
-}
-
-.footer p {
-    margin: 5px 0;
-}
+    
 
 .parrafo p {
     margin: 0;
@@ -363,3 +489,64 @@ hr {
     }
 }
 
+
+#botoninicio
+{
+background-color: rgb(84, 202, 192);
+border-radius: 5px;
+
+
+
+}
+
+
+/* MAS BOTONES  */
+
+
+#menu-toggle .fas.fa-bars {
+    color: white; /* Cambia #ff6347 por el color que desees */
+    font-size: 25px; /* Opcional: Cambia el tamaño del ícono si es necesario */
+}
+
+
+
+
+/* ESTO ES PARA LA PAGINA DE NOSOTROS EL TITULO */
+
+
+
+/* Estilos para el encabezado h1 con un ID único */
+#compromiso-title {
+    font-family: 'Georgia', serif; /* Cambia la fuente */
+    font-size: 36px;
+    text-align: center;  /* Centra el texto */
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #677c68; /* Color verde para el texto */
+}
+
+/* Estilos para el enlace dentro del h1 */
+#compromiso-link {
+    color: inherit; /* Hereda el color del h1 */
+    text-decoration: none;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+    border-bottom: 3px solid transparent;
+    padding-bottom: 5px;
+    display: inline-block; /* Asegura que el enlace se comporte como un bloque en línea */
+}
+
+/* Efecto hover para el enlace */
+
+
+
+
+/* Estilos responsivos para pantallas pequeñas */
+@media screen and (max-width: 768px) {
+    #compromiso-title {
+        font-size: 28px; /* Ajusta el tamaño de la fuente para pantallas pequeñas */
+    }
+
+    #compromiso-line {
+        width: 90%; /* Aumenta el ancho de la línea en pantallas pequeñas */
+    }
+}

@@ -1,56 +1,242 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Christian\'s Muebles de Melamina</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+    <title>Decoración de Cocinas</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="estilos.css">
-   
+       
+    
 </head>
+
 <body>
-    <header>
+
+    <!-- Barra Superior -->
     <div class="top-bar">
-        <div class="row align-items-center">
-            <div class="col-md-4 text-center text-md-left">
-            <a href="index.html">
-            <img src="imagenes/logo.png"  alt="Christian\'s Muebles de Melamina" class="img-fluid logo-img"></a>
-            </div>
-            <div class="col-md-8 text-center contact-info">
-            <p style="color: white; font-weight: bold; ">FABRICACION DE DISEÑOS EN MELAMINA</p>
-                    <p style="color: white; font-weight: bold; ">CELULAR: 998224145</p>
-                    <p style="color: white; font-weight: bold; ">CORREO: MELAMINACRISTIAN@GMAIL.COM</p>
+        <div class="container">
+            <div class="contact-info">
+                <div>
+                    <br>
+                    <span><i class="fas fa-phone"></i> 981 324 207</span>
+                    <a href="mailto:maycoltorres@marmolygranitoariana.com"><i class="fas fa-envelope"></i><strong> mueblescristian@muebleriaperu.com</strong></a>
+                </div>
+                <div>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
                 </div>
             </div>
         </div>
     </div>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item"><a class="nav-link" href="inicio1.html">INICIO</a></li>
-                <li class="nav-item"><a class="nav-link" href="nosotros.html">NOSOTROS</a></li>
-                <li class="nav-item"><a class="nav-link" href="servicios.html">SERVICIOS</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">PROYECTOS</a></li>
-                <li class="nav-item"><a class="nav-link" href="contactanos.html">CONTÁCTANOS</a></li>
-            </ul>
+
+    <!-- Menú de Navegación -->
+    <nav class="navbar navbar-expand-lg navbar-custom" style="margin-top: 40px;">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <br>
+                <img src="imagenes/logosinfondo.png" alt="Logo"> <!-- Reemplaza con el logo correspondiente -->
+            </a>
+            <button id="menu-toggle" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-bars"></i>
+    </button>
+    
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="inicio1.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="servicios.html">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="proyectos.html">Proyectos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contactanos.html">Contáctanos</a>
+                    </li>
+                </ul>
+                <a href="#contactanos" class="btn btn-contact btn-contact-small">
+                    <i class="fab fa-whatsapp icon-whatsapp"></i> Contáctanos
+                </a>
+            </div>
         </div>
     </nav>
-</header>
+
+    <!-- Encabezado -->
+    <div class="header-content">
+        <div class="container">
+            <h1>Decoramos tus cocinas: Reposteros, Tableros y más</h1>
+            <p>Calidad y garantía</p>
+            <a href="#contactanos" class="btn btn-custom">Contáctanos</a>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            // Aplica el color cuando el ítem del menú es tocado o cliqueado
+            $('.navbar-nav .nav-item .nav-link').on('touchstart mouseenter', function(){
+                $(this).css('color', '#ff6347'); // Cambia #ff6347 por el color que desees
+            });
+            
+            // Opcional: Restablece el color cuando el ítem ya no está siendo tocado
+            $('.navbar-nav .nav-item .nav-link').on('touchend mouseleave', function(){
+                $(this).css('color', '#ffffff'); // Cambia #ffffff por el color original
+            });
+        });
+    </script>
+
+               
+
+<style>
+.header-content {
+    background-image: url('fotos/closet1.png'); /* Reemplaza con la URL de la imagen de fondo */
+  
+}
+
+.block {
+    width: 100%;
+    padding: 50px 20px;
+    box-sizing: border-box;
+    
+}
+
+#section1 {
+    background-color: #999999;
+}
+
+
+h2 {
+    margin-top: 0;
+    text-align: center;
+}
+
+p {
+    text-align: center;
+}
+
+</style>
+
+   
+    <style>
+/* Reset de márgenes y padding para consistencia entre navegadores */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+/* Sección de características */
+.features-section {
+    display: flex;
+  
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 20px;
+}
+.features-container {
+    
+    background-size: cover; /* Hace que la imagen cubra todo el fondo */
+    background-position: center; /* Centra la imagen en el fondo */
+    padding: 60px 20px; /* Espaciado superior e inferior */
+    color: #fff; /* Cambia el color del texto a blanco para mejor visibilidad */
+}
+.feature-box {
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    padding: 20px;
+    width: 22%; /* Ancho de cada caja para que entren 4 en una fila */
+    text-align: center;
+    transition: all 0.3s ease;
+    height: 250px; /* Altura fija para mantener uniformidad entre las cajas */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.feature-box:hover {
+    border-color: #ffaf00; /* Color dorado en el borde al pasar el mouse */
+}
+
+.icon img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 16px;
+    
+    flex-grow: 1;
+}
+
+/* Responsive Design */
+
+/* Ajustes para pantallas medianas (tabletas y dispositivos de tamaño similar) */
+@media (max-width: 768px) {
+    .features-section {
+        flex-wrap: wrap; /* Permite que las cajas se muevan a la siguiente línea si no hay espacio */
+    }
+
+    .feature-box {
+        width: 45%; /* Ancho del 45% para que entren dos cajas por fila */
+        margin-bottom: 20px; /* Espacio entre filas */
+    }
+}
+
+/* Ajustes para pantallas pequeñas (teléfonos móviles y dispositivos de tamaño similar) */
+@media (max-width: 480px) {
+    .feature-box {
+        width: 100%; /* Ancho del 100% para que cada caja ocupe toda la fila */
+    }
+
+    .icon img {
+        width: 40px; /* Reducir el tamaño del icono */
+        height: 40px;
+    }
+
+    h3 {
+        font-size: 18px; /* Reducir el tamaño de la fuente del título */
+    }
+
+    p {
+        font-size: 14px; /* Reducir el tamaño de la fuente del texto */
+    }
+   
+
+
+
+}
+
+</style>
+
+
+
+
+</head>
 
  <div class="container my-5">
 
-<br>
-<br>
-<br>
-<br>
 
-
-<br>
 <p>
    <h1> Tiene alguna pregunta?</h1>
 Estamos para atenderlo Muchas gracias por su interés en

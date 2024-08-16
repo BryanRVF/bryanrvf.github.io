@@ -1,39 +1,172 @@
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-<link rel="stylesheet" href="estilos.css">
-<style>
-    
-</style>
 
-<section class="beneficios" id="beneficios-section">
-    <div class="contenido">
-        <div class="texto" id="texto-beneficios">
-            <h1 class="titulo" id="titulo-nuestros">NUESTROS</h1>
-            <h3 class="subtitulo" id="subtitulo-beneficios">Beneficios</h3>
-          
-            <ul class="lista-beneficios">
-                <li id="beneficio-1">
-                    <i class="fas fa-check-circle" id="icono-beneficio-1"></i>
-                    CONTAMOS CON LAS HERRAMIENTAS ADECUADAS PARA REALIZAR TRABAJOS DE ENVERGADURA
-                </li>
-                <hr id="hr-beneficio-1">
-                <li id="beneficio-2">
-                    <i class="fas fa-check-circle" id="icono-beneficio-2"></i>
-                    CONTAMOS CON PROFESIONALES DEDICADOS Y ESPECIALIZADOS EN CADA ÁREA DE NUESTROS SERVICIOS
-                </li>
-                <hr id="hr-beneficio-2">
-                <li id="beneficio-3">
-                    <i class="fas fa-check-circle" id="icono-beneficio-3"></i> 
-                    GARANTÍA EN NUESTRO TRABAJO PARA SU TRANQUILIDAD Y CONFORT
-                </li>
-                <hr id="hr-beneficio-3">
-                <li id="beneficio-4">
-                    <i class="fas fa-check-circle" id="icono-beneficio-4"></i> 
-                    TODOS LOS PRODUCTOS QUE USAMOS EN NUESTROS TRABAJOS SON DE LA MEJOR CALIDAD
-                </li>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+
+<footer id="unique-footer" class="footer">
+    <div class="footer-container">
+        <div class="footer-column">
+            <h3>NUESTROS PRODUCTOS</h3>
+            <ul>
+                <li><i class="fas fa-check"></i> Muebles de Cocina</li>
+                <li><i class="fas fa-check"></i> Salas de Entretenimiento</li>
+                <li><i class="fas fa-check"></i> Muebles de Oficina</li>
+                <li><i class="fas fa-check"></i> Muebles de Dormitorio</li>
+                <li><i class="fas fa-check"></i> Closets</li>
+                <li><i class="fas fa-check"></i> Puertas</li>
+                <li><i class="fas fa-check"></i> División con Drywall</li>
             </ul>
         </div>
-        <div class="imagen" id="imagen-beneficios">
-            <img src="fotos/fondos4.png" alt="Imagen de trabajo">
+        <div class="footer-column">
+            <h3>UBÍCANOS</h3>
+            <p>
+                <i class="fas fa-map-marker-alt"></i> Programa de Vivienda Las Torres de Pachacamac<br>
+                Mz.A Lt.22 - Distrito de Pachacamac, Lima - Perú
+            </p>
+            <p>
+                <i class="fas fa-phone"></i> Celulares:<br>
+                945 291927 / 990 851750
+            </p>
+        </div>
+        <div class="footer-column">
+            <h3>ESCRÍBENOS</h3>
+            <p>Quieres comunicarte y solicitar información? Escríbenos por este medio</p>
+            <p><a href="mailto:consultas@decorcerna.com"><i class="fas fa-envelope"></i> consultas@decorcerna.com</a></p>
+        </div>
+        <div class="footer-column">
+            <h3>SÍGUENOS EN:</h3>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="#"><i class="fab fa-google-plus-g"></i></a>
+            </div>
         </div>
     </div>
-</section>
+    <div class="footer-bottom">
+        <p>© Copyright 2024, Decorcerna - Todos los Derechos Reservados.</p>
+        <p>Diseño Web <a href="https://publinet.pe" target="_blank">Publinet®</a></p>
+    </div>
+</footer>
+<style>
+/* Estilo general del pie de página */
+#unique-footer {
+    background-color: #005CA8; /* Color de fondo */
+    color: white; /* Color del texto */
+    padding: 20px 0;
+    font-family: 'Lato', sans-serif;
+}
+
+#unique-footer .footer-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    flex-wrap: wrap; /* Permite que las columnas se envuelvan en pantallas pequeñas */
+}
+
+#unique-footer .footer-column {
+    width: 23%;
+    margin-bottom: 20px; /* Espacio entre columnas en pantallas pequeñas */
+}
+
+#unique-footer .footer-column h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: black;
+}
+
+#unique-footer .footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+#unique-footer .footer-column ul li {
+    margin-bottom: 5px;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+}
+
+#unique-footer .footer-column ul li i {
+    margin-right: 8px;
+}
+
+#unique-footer .footer-column p {
+    margin: 10px 0;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+}
+
+#unique-footer .footer-column p i {
+    margin-right: 8px;
+}
+
+#unique-footer .footer-column a {
+    color: white;
+    text-decoration: none;
+}
+
+#unique-footer .footer-column a:hover {
+    text-decoration: underline;
+}
+
+#unique-footer .social-icons a {
+    display: inline-block;
+    margin-right: 10px;
+    color: white; /* Color de los íconos sociales */
+}
+
+#unique-footer .social-icons i {
+    font-size: 24px; /* Tamaño de los íconos */
+}
+
+#unique-footer .footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    padding-top: 10px;
+    font-size: 0.8rem;
+}
+
+#unique-footer .footer-bottom a {
+    color: white;
+    text-decoration: none;
+}
+
+#unique-footer .footer-bottom a:hover {
+    text-decoration: underline;
+}
+/* Responsive Styles */
+@media (max-width: 480px) {
+    body {
+        font-size: 1.2rem; /* Aumenta el tamaño base del texto */
+        line-height: 1.5; /* Mejora la legibilidad */
+    }
+
+    #unique-footer .footer-column h3 {
+        font-size: 2rem; /* Tamaño del texto en encabezados */
+    }
+
+    #unique-footer .footer-column ul li {
+        font-size: 1.6rem; /* Tamaño del texto en listas */
+    }
+
+    #unique-footer .footer-column p {
+        font-size: 1.6rem; /* Tamaño del texto en párrafos */
+    }
+
+    #unique-footer .footer-bottom {
+        font-size: 1.4rem; /* Tamaño del texto en la parte inferior */
+    }
+
+    #unique-footer .social-icons i {
+        font-size: 40px; /* Tamaño de los íconos sociales */
+    }
+}
+
+
+
+</style>
