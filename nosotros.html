@@ -40,7 +40,7 @@
         <div class="container">
             <a class="navbar-brand" href="index.html">
                 <br>
-                <img src="imagenes/logosinfondo.png" alt="Logo"> <!-- Reemplaza con el logo correspondiente -->
+                <img src="imagenes/logosinfondo.png" class="imagenlogo" > <!-- Reemplaza con el logo correspondiente -->
             </a>
             <button id="menu-toggle" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -50,7 +50,7 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="inicio1.html">Inicio</a>
+                        <a class="nav-link" href="inicio.html">Inicio</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="nosotros.html">Nosotros</a>
@@ -100,6 +100,10 @@
 .header-content {
     background-image: url('fotos/fondos2.png'); /* Reemplaza con la URL de la imagen de fondo */
   
+}
+
+.navbar {
+    z-index: 1000; /* o cualquier valor alto */
 }
 
 .block {
@@ -192,11 +196,20 @@ p {
     .feature-box {
         width: 100%; /* Ancho del 100% para que cada caja ocupe toda la fila */
     }
-
-    .icon img {
-        width: 40px; /* Reducir el tamaño del icono */
-        height: 40px;
+    .header-content h1 {
+        font-size: 24px; /* Cambia el tamaño de la fuente del título */
+        line-height: 1.2; /* Ajusta el espaciado entre líneas */
+        text-align: center; /* Centra el texto, si es necesario */
     }
+.imagenlogo {
+    width: 200px; /* Reducir el tamaño del icono */
+    height: 500px;
+  
+
+
+}
+
+
 
     h3 {
         font-size: 18px; /* Reducir el tamaño de la fuente del título */
@@ -266,33 +279,233 @@ p {
                 <p>Una combinación de Profesionales y técnicos calificados intervienen en nuestro equipo de trabajo, quienes tienen la responsabilidad de continuar sumando día a día, más Clientes satisfechos de nuestros productos.</p>
             </div>
         </div>
+</div>
   <br>
-<div class="container-my5">
-    <footer class="footer ">
-        <div class="container-responsive text-center">
-            <div class="row">
-                <div class="col-md-6 ">
-                    <h5>Informes</h5>
-                    <p>
-                        Av. Humboldt, Alfonso Ugarte 3ra etapa Mz A Lote 3 Gregorio<br>
-                        Albarracín Lanchipa, Tacna, Perú<br>
-                        <p><i class="fas fa-phone-alt"></i> CEL: 998224145</p>
-                        <p><i class="fas fa-phone-alt"></i> CEL: 998224145</p>
-                        <p><i class="fas fa-envelope"></i> CORREO: MELAMINACRISTIAN@GMAIL.COM</p>
-                    </p>
-                </div>
-                <div class="col-md-6 " >
-                    <h5>Redes Sociales</h5>
-                    <p>
-                        Instagram: MueblesChristian<br><br>
-                        WhatsApp: 923 711 418<br><br>
-                        Facebook: Muebles Christian
-                    </p>
-                </div>
+
+
+  <footer id="unique-footer" class="footer">
+    <div class="footer-container">
+        <div class="footer-column">
+            <h3>NUESTROS PRODUCTOS</h3>
+            <ul>
+                <li><img src="https://img.icons8.com/material-outlined/24/ffffff/checkmark--v1.png" alt="Check"> Muebles de Cocina</li>
+                <li><img src="https://img.icons8.com/material-outlined/24/ffffff/checkmark--v1.png" alt="Check"> Salas de Entretenimiento</li>
+                <li><img src="https://img.icons8.com/material-outlined/24/ffffff/checkmark--v1.png" alt="Check"> Muebles de Oficina</li>
+                <li><img src="https://img.icons8.com/material-outlined/24/ffffff/checkmark--v1.png" alt="Check"> Muebles de Dormitorio</li>
+                <li><img src="https://img.icons8.com/material-outlined/24/ffffff/checkmark--v1.png" alt="Check"> Closets</li>
+                <li><img src="https://img.icons8.com/material-outlined/24/ffffff/checkmark--v1.png" alt="Check"> Puertas</li>
+                <li><img src="https://img.icons8.com/material-outlined/24/ffffff/checkmark--v1.png" alt="Check"> División con Drywall</li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h3>UBÍCANOS</h3>
+            <p>
+                <img src="fotos/icono11.png" alt="Ubicación" id="email-icon"> Programa de Vivienda Las Torres de Pachacamac<br>
+                Mz.A Lt.22 - Distrito de Pachacamac, Lima - Perú
+            </p>
+            <p>
+                <img src="fotos/icono12.png" id="email-icon" alt="Teléfono"> Celulares:<br>
+                945 291927 / 990 851750
+            </p>
+        </div>
+        <div class="footer-column">
+            <h3>ESCRÍBENOS</h3>
+            <p>Quieres comunicarte y solicitar información? Escríbenos por este medio</p>
+            <p><a href="mailto:consultas@decorcerna.com"><img src="fotos/icono10.png" 
+                alt="Email" id="email-iconn"> muebleschristian@mueblesperu.com</a></p>
+        </div>
+        <div class="footer-column">
+            <h3>SÍGUENOS EN:</h3>
+            <div class="social-icons">
+                <a href="#"><img src="fotos/icono13.png" alt="Facebook"></a>
+                <a href="#"><img src="fotos/iconowasap.png" alt="Twitter"></a>
+                <a href="#"><img src="fotos/tiktok.png" alt="YouTube"></a>
+              
             </div>
         </div>
     </div>
-</div>
+    <div class="footer-bottom">
+        <p>© Copyright 2024, Christian's Muebles - Todos los Derechos Reservados.</p>
+        <p>Diseño Web <a href="https://www.facebook.com" target="_blank">BRVF®</a></p>
+    </div>
+</footer>
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap">
+
+
+
+<style>
+/* Estilo general del pie de página */
+#unique-footer {
+    background-color: #005CA8; /* Color de fondo */
+    color: white; /* Color del texto */
+    padding: 20px 0;
+    font-family: 'Lato', sans-serif;
+}
+
+#unique-footer .footer-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    flex-wrap: wrap; /* Permite que las columnas se envuelvan en pantallas pequeñas */
+}
+
+#unique-footer .footer-column {
+    width: 23%;
+    margin-bottom: 20px; /* Espacio entre columnas en pantallas pequeñas */
+}
+
+#unique-footer .footer-column h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: black;
+}
+
+#unique-footer .footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+#unique-footer .footer-column ul li {
+    margin-bottom: 5px;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+}
+
+#unique-footer .footer-column ul li img {
+    margin-right: 20px;
+}
+#email-icon {
+    width: 30px; /* Ancho personalizado */
+    height: 30px; /* Alto personalizado */
+}
+#email-iconn {
+    width: 35px; /* Ancho personalizado */
+    height: 35px; /* Alto personalizado */
+}
+
+
+#unique-footer .footer-column p {
+    margin: 10px 0;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+}
+
+#unique-footer .footer-column p img {
+    margin-right: 8px;
+}
+
+#unique-footer .footer-column a {
+    color: white;
+    text-decoration: none;
+}
+
+#unique-footer .footer-column a:hover {
+    text-decoration: underline;
+}
+
+#unique-footer .social-icons a {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+#unique-footer .social-icons img {
+    width: 24px;
+    height: 24px;
+}
+
+#unique-footer .footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    padding-top: 10px;
+    font-size: 0.8rem;
+}
+
+#unique-footer .footer-bottom a {
+    color: white;
+    text-decoration: none;
+}
+
+#unique-footer .footer-bottom a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+    #unique-footer .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #unique-footer .footer-column {
+        width: 100%;
+        text-align: center;
+    }
+
+    #unique-footer .footer-column:not(:last-child) {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2); /* Separador entre columnas */
+        padding-bottom: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    #unique-footer .footer-column h3 {
+        font-size: 1.5rem !important; /* Aumenta el tamaño del texto */
+    }
+
+    #unique-footer .footer-column ul li {
+        font-size: 1.2rem !important; /* Aumenta el tamaño del texto */
+    }
+
+    #unique-footer .footer-column p {
+        font-size: 1.2rem !important; /* Aumenta el tamaño del texto */
+    }
+
+    #unique-footer .social-icons img {
+        width: 36px !important; /* Aumenta el tamaño de los íconos */
+        height: 36px !important;
+    }
+
+    #unique-footer .footer-bottom {
+        font-size: 1.2rem !important; /* Aumenta el tamaño del texto */
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 1.2rem; /* Aumenta el tamaño base del texto */
+        line-height: 1.5; /* Mejora la legibilidad */
+    }
+
+    #unique-footer .footer-column h3 {
+        font-size: 2rem; /* Tamaño del texto en encabezados */
+    }
+
+    #unique-footer .footer-column ul li {
+        font-size: 1.6rem; /* Tamaño del texto en listas */
+    }
+
+    #unique-footer .footer-column p {
+        font-size: 1.6rem; /* Tamaño del texto en párrafos */
+    }
+
+    #unique-footer .footer-bottom {
+        font-size: 1.4rem; /* Tamaño del texto en la parte inferior */
+    }
+
+    #unique-footer .social-icons i {
+        font-size: 40px; /* Tamaño de los íconos sociales */
+    }
+}
+
+</style>
+
     </footer>
 
 

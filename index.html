@@ -39,7 +39,7 @@
         <div class="container">
             <a class="navbar-brand" href="#">
                 <br>
-                <img src="imagenes/logosinfondo.png" alt="Logo"> <!-- Reemplaza con el logo correspondiente -->
+                <img src="imagenes/logosinfondo.png"  class="imagenlogo"   alt="Logo"> <!-- Reemplaza con el logo correspondiente -->
             </a>
             <button id="menu-toggle" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -49,7 +49,7 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="inicio1.html">Inicio</a>
+                        <a class="nav-link" href="inicio.html">Inicio</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="nosotros.html">Nosotros</a>
@@ -694,11 +694,23 @@ p {
         width: 100%; /* Ancho del 100% para que cada caja ocupe toda la fila */
     }
 
-    .icon img {
-        width: 40px; /* Reducir el tamaño del icono */
-        height: 40px;
+    .header-content h1 {
+        font-size: 24px; /* Cambia el tamaño de la fuente del título */
+        line-height: 1.2; /* Ajusta el espaciado entre líneas */
+        text-align: center; /* Centra el texto, si es necesario */
     }
 
+    .imagenlogo {
+        width: 130%; /* Ajusta el porcentaje según sea necesario */
+        height: auto; /* Mantiene la proporción de la imagen */
+        top: 200px; 
+
+
+}
+
+.navbar {
+    z-index: 1000; /* o cualquier valor alto */
+}
     h3 {
         font-size: 18px; /* Reducir el tamaño de la fuente del título */
     }
