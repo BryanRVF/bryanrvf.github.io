@@ -158,8 +158,9 @@ top: 8px;
 
 .navbar-custom .navbar-brand img {
     height: 80px;
-    margin-left: 50px;
-    margin-top: -20px; 
+    /* margin-left: 50px; */
+    margin-top: -20px;
+   
  
 }
 
