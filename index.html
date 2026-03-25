@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Muebles CHRISTIAN'S | Catálogo Premium</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Header moderno minimalista -->
+    <header class="header">
+        <div class="header-content">
+            <div class="logo">
+                <div class="logo-icon">✦</div>
+                <div class="logo-text">
+                    <h1>CHRISTIAN'S</h1>
+                    <span>Muebles & Diseño</span>
+                </div>
+            </div>
+            <div class="header-badge">
+                <i class="fas fa-medal"></i>
+                <span>Alta calidad en accesorios y acabados de primera</span>
+            </div>
+        </div>
+        <div class="hero-banner">
+            <p class="hero-text">Diseño y fabricación de muebles en Melamina<br>Puertas para exteriores e interiores</p>
+        </div>
+    </header>
+
+    <!-- Sección de categorías moderna con menú hamburguesa -->
+    <section class="categories-section">
+        <div class="categories-wrapper">
+            <div class="categories-header">
+                <span class="categories-subtitle">Colecciones</span>
+                <h2 class="categories-title">Explora por categoría</h2>
+            </div>
+            
+            <!-- Botón hamburguesa para móvil -->
+            <button class="categories-toggle" id="categoriesToggle">
+                <i class="fas fa-bars"></i>
+                <span>Categorías</span>
+                <i class="fas fa-chevron-down"></i>
+            </button>
+            
+            <div class="categories-grid" id="filterContainer">
+                <!-- Botones con solo iconos generados dinámicamente -->
+            </div>
+        </div>
+    </section>
+
+    <main class="main-content">
+        <div class="catalog-grid" id="catalogGrid">
+            <!-- Productos cargados con JS -->
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <h3>CHRISTIAN'S</h3>
+                <p>Muebles en Melamina de alta calidad</p>
+            </div>
+            <div class="footer-copy">
+                <p>&copy; 2026 Muebles CHRISTIAN'S. Todos los derechos reservados.</p>
+                <p class="footer-contact">📞 Cotizaciones: (01) 123-4567</p>
+            </div>
+        </div>
+    </footer>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="modal-close" id="modalClose">&times;</span>
+            <h2 id="modalTitle"></h2>
+            <img id="modalImg" src="" alt="Producto">
+            <div id="modalDetails"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
